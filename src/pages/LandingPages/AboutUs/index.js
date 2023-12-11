@@ -21,7 +21,7 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -47,7 +47,7 @@ function AboutUs() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
+          route: "#",
           label: "free download",
           color: "default",
         }}
@@ -95,9 +95,9 @@ function AboutUs() {
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
-            </MKButton>
+            </MKButton> */}
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>

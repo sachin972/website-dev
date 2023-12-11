@@ -36,7 +36,7 @@ function Information() {
                   <DefaultInfoCard
                     icon="public"
                     title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    description="This is some thing about our company that we feel good about"
                   />
                 </MKBox>
               </Grid>
@@ -44,8 +44,8 @@ function Information() {
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="payments"
-                    title="Payments functionality"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="All functionality"
+                    description="You can get nearly all things required for you in our company"
                   />
                 </MKBox>
               </Grid>
@@ -73,7 +73,7 @@ function Information() {
             <CenteredBlogCard
               image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
               title="Get insights on Search"
-              description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
+              description="This is something about insights of our company, you will get to know us better when you give some time to our website."
               action={{
                 type: "internal",
                 route: "pages/company/about-us",

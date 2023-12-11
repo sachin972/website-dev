@@ -282,12 +282,14 @@ const routes = [
         collapse: [
           {
             name: "page headers",
-            route: "/sections/page-sections/page-headers",
+            // route: "/sections/page-sections/page-headers",
+            route: "#",
             component: <PageHeaders />,
           },
           {
             name: "features",
-            route: "/sections/page-sections/features",
+            // route: "/sections/page-sections/features",
+            route: "#",
             component: <Features />,
           },
         ],
@@ -299,17 +301,20 @@ const routes = [
         collapse: [
           {
             name: "navbars",
-            route: "/sections/navigation/navbars",
+            // route: "/sections/navigation/navbars",
+            route: "#",
             component: <Navbars />,
           },
           {
             name: "nav tabs",
-            route: "/sections/navigation/nav-tabs",
+            // route: "/sections/navigation/nav-tabs",
+            route: "#",
             component: <NavTabs />,
           },
           {
             name: "pagination",
-            route: "/sections/navigation/pagination",
+            // route: "/sections/navigation/pagination",
+            route: "#",
             component: <Pagination />,
           },
         ],
@@ -321,12 +326,14 @@ const routes = [
         collapse: [
           {
             name: "inputs",
-            route: "/sections/input-areas/inputs",
+            // route: "/sections/input-areas/inputs",
+            route: "#",
             component: <Inputs />,
           },
           {
             name: "forms",
-            route: "/sections/input-areas/forms",
+            // route: "/sections/input-areas/forms",
+            route: "#",
             component: <Forms />,
           },
         ],
@@ -338,17 +345,20 @@ const routes = [
         collapse: [
           {
             name: "alerts",
-            route: "/sections/attention-catchers/alerts",
+            // route: "/sections/attention-catchers/alerts",
+            route: "#",
             component: <Alerts />,
           },
           {
             name: "modals",
-            route: "/sections/attention-catchers/modals",
+            // route: "/sections/attention-catchers/modals",
+            route: "#",
             component: <Modals />,
           },
           {
             name: "tooltips & popovers",
-            route: "/sections/attention-catchers/tooltips-popovers",
+            // route: "/sections/attention-catchers/tooltips-popovers",
+            route: "#",
             component: <TooltipsPopovers />,
           },
         ],
@@ -360,42 +370,50 @@ const routes = [
         collapse: [
           {
             name: "avatars",
-            route: "/sections/elements/avatars",
+            // route: "/sections/elements/avatars",
+            route: "#",
             component: <Avatars />,
           },
           {
             name: "badges",
-            route: "/sections/elements/badges",
+            // route: "/sections/elements/badges",
+            route: "#",
             component: <Badges />,
           },
           {
             name: "breadcrumbs",
-            route: "/sections/elements/breadcrumbs",
+            // route: "/sections/elements/breadcrumbs",
+            route: "#",
             component: <BreadcrumbsEl />,
           },
           {
             name: "buttons",
-            route: "/sections/elements/buttons",
+            // route: "/sections/elements/buttons",
+            route: "#",
             component: <Buttons />,
           },
           {
             name: "dropdowns",
-            route: "/sections/elements/dropdowns",
+            // route: "/sections/elements/dropdowns",
+            route: "#",
             component: <Dropdowns />,
           },
           {
             name: "progress bars",
-            route: "/sections/elements/progress-bars",
+            // route: "/sections/elements/progress-bars",
+            route: "#",
             component: <ProgressBars />,
           },
           {
             name: "toggles",
-            route: "/sections/elements/toggles",
+            // route: "/sections/elements/toggles",
+            route: "#",
             component: <Toggles />,
           },
           {
             name: "typography",
-            route: "/sections/elements/typography",
+            // route: "/sections/elements/typography",
+            route: "#",
             component: <Typography />,
           },
         ],
