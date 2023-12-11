@@ -409,17 +409,17 @@ const routes = [
       {
         name: "getting started",
         description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        href: "#",
       },
       {
         name: "foundation",
         description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+        href: "#",
       },
       {
         name: "components",
         description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+        href: "#",
       },
       {
         name: "plugins",
