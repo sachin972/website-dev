@@ -8,13 +8,13 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from "assets/images/company-logo.png";
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "My Company",
+    name: "Bharmani Consulting",
     image: logoCT,
     route: "/",
   },

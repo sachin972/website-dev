@@ -92,7 +92,7 @@ function Presentation() {
                 },
               })}
             >
-              Company Name{" "}
+              Bharmani Consulting{" "}
             </MKTypography>
             <MKTypography
               variant="body1"

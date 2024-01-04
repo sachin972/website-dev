@@ -31,6 +31,7 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
 
+import companyLogo from "assets/images/logos/gray-logos/company-logo.svg";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -43,7 +44,7 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
-function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, center }) {
+function DefaultNavbar({ routes, transparent, light, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
   const [dropdownName, setDropdownName] = useState("");
@@ -468,7 +469,12 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
-        <MKBox display="flex" justifyContent="space-between" alignItems="center">
+        <MKBox
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          style={{ maxHeight: "60px" }}
+        >
           <MKBox
             component={Link}
             to="/"
@@ -477,7 +483,7 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
             <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
+              <img src={companyLogo} />
             </MKTypography>
           </MKBox>
           <MKBox
@@ -551,7 +557,7 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "My Company",
+  brand: "Bharmani Consulting",
   transparent: false,
   light: false,
   // action: false,
