@@ -22,8 +22,11 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import MKButton from "components/MKButton";
+import { Link } from "react-router-dom";
+import MuiLink from "@mui/material/Link";
 
-function RotatingCardFront({ color, image, icon, title, description }) {
+function RotatingCardFront({ color, image, icon, title, description, action }) {
   return (
     <MKBox
       display="flex"
@@ -56,6 +59,27 @@ function RotatingCardFront({ color, image, icon, title, description }) {
         <MKTypography variant="body2" color="white" opacity={0.8}>
           {description}
         </MKTypography>
+        {action && (
+          <MKBox width="50%" mt={4} mb={2} mx="auto">
+            {action.type === "external" ? (
+              <MKButton
+                component={MuiLink}
+                href={action.route}
+                target="_blank"
+                rel="noreferrer"
+                color="white"
+                size="small"
+                fullWidth
+              >
+                {action.label}
+              </MKButton>
+            ) : (
+              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
+                {action.label}
+              </MKButton>
+            )}
+          </MKBox>
+        )}
       </MKBox>
     </MKBox>
   );
@@ -83,6 +107,14 @@ RotatingCardFront.propTypes = {
   icon: PropTypes.node,
   title: PropTypes.node.isRequired,
   description: PropTypes.node.isRequired,
+  action: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.shape({
+      type: PropTypes.oneOf(["external", "internal"]).isRequired,
+      route: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    }),
+  ]).isRequired,
 };
 
 export default RotatingCardFront;

@@ -73,7 +73,12 @@ function Information() {
             <CenteredBlogCard
               image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
               title="Get insights on Search"
-              description="This is something about insights of our company, you will get to know us better when you give some time to our website."
+              description="We work with companies to boost their performance, guiding them in
+              planning their strategies, organizing their structure, and streamlining their
+              processes, aligned with their vision, mission, and objectives. We assist
+              companies in recruiting the ideal candidates and provide strategies on
+              rewarding and motivating their staff. Additionally, we also support
+              professionals in their career development and progression."
               action={{
                 type: "internal",
                 route: "pages/company/about-us",

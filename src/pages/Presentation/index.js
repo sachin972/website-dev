@@ -30,7 +30,7 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
@@ -41,7 +41,7 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 // import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -52,6 +52,17 @@ import bgImage from "assets/images/bg-presentation.jpg";
 // import InputIcon from "layouts/sections/input-areas/inputs/components/InputIcon";
 // import Forms from "layouts/sections/input-areas/forms";
 import FormSimple from "layouts/sections/input-areas/forms/components/FormSimple";
+
+import MediaCard from "./components/ExampleCard/card";
+import img1 from "../../assets/images/city-profile.jpg";
+import img2 from "../../assets/images/bg-about-us.jpg";
+import img3 from "../../assets/images/bruce-mars.jpg";
+import { ArrowForward } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+import { Button, Box, Typography } from "@mui/material";
+import Divider from "@mui/material/Divider";
+import DividerWithText from "./divider";
+// import { Chip } from "@mui/material";
 
 function Presentation() {
   // const [firstFocus, setFirstFocus] = React.useState(false);
@@ -101,8 +112,16 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              We are here to help where you fall apart from your ideas and give your ideas a
-              presentation
+              EMPOWERING ORGANIZATIONS FROM WITHIN
+            </MKTypography>
+            <MKTypography
+              variant="body1"
+              color="white"
+              textAlign="center"
+              px={{ xs: 6, lg: 12 }}
+              mt={1}
+            >
+              Solutions that Begin and End with People
             </MKTypography>
           </Grid>
         </Container>
@@ -122,53 +141,136 @@ function Presentation() {
         <Information />
         {/* <DesignBlocks /> */}
         <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
+        <Container sx={{ mt: 6, mb: 6 }}>
+          {/* <BuiltByDevelopers /> */}
+          {/* <Divider
+            sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
+            textAlign="center"
+            variant="inset"
+          >
+            <div>Insights and Perspective</div>
+          </Divider> */}
+          <DividerWithText text="Insights and Perspective" />
         </Container>
+
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="info"
-                icon="flag"
-                title="Getting Started"
+              <MediaCard
+                image={img1}
+                btnText="Read More"
+                name="AI at workplace"
                 description="Give us your contact and we'll discuss over your ideas."
-                action={{
-                  type: "external",
-                  route: "#",
-                  label: "Let's start",
-                }}
               />
             </Grid>
             <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="precision_manufacturing"
-                title="Motive"
+              <MediaCard
+                image={img2}
+                name="People, Planet and Profitability"
                 description="Get heated and pull up your ideas and view them in reality."
-                action={{
-                  type: "external",
-                  route: "#",
-                  label: "Read more",
-                }}
+                btnText="Read More"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="apps"
-                title="Areas"
+              <MediaCard
+                image={img3}
+                name="Transformational Leadership"
                 description="We are providing consultancy in several fields wherever required."
-                action={{
-                  type: "external",
-                  route: "#",
-                  label: "Read more",
-                }}
+                btnText="Read More"
               />
             </Grid>
           </Grid>
         </Container>
+        <Box display="flex" justifyContent="center" mt={2}>
+          <Button
+            size="large"
+            sx={{ bgcolor: "#00008B", mx: "auto", px: 20, mt: 5 }}
+            variant="contained"
+            color="primary"
+            endIcon={<ArrowForward />}
+            component={Link}
+            to="#"
+          >
+            {" "}
+            Explore all Insights{" "}
+          </Button>
+        </Box>
+
+        <Container sx={{ mt: 15, mb: 6 }}>
+          {/* <BuiltByDevelopers /> */}
+          {/* <Divider
+            sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
+            textAlign="center"
+            variant="inset"
+          >
+            <div>Insights and Perspective</div>
+          </Divider> */}
+          {/* <DividerWithText text="Our Solutions" /> */}
+          <Box position="relative">
+            <Divider />
+            <Typography
+              variant="h3"
+              sx={{
+                position: "absolute",
+                top: "-20px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                bgcolor: "background.paper",
+                px: 1,
+              }}
+            >
+              Our Solutions
+            </Typography>
+          </Box>
+        </Container>
+
+        <Container>
+          <Grid container spacing={3}>
+            <Grid item xs={12} lg={4}>
+              <MediaCard
+                image={img1}
+                btnText="Read More"
+                name="AI at workplace"
+                description="Give us your contact and we'll discuss over your ideas."
+              />
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MediaCard
+                image={img2}
+                name="People, Planet and Profitability"
+                description="Get heated and pull up your ideas and view them in reality."
+                btnText="Read More"
+              />
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MediaCard
+                image={img3}
+                name="Transformational Leadership"
+                description="We are providing consultancy in several fields wherever required."
+                btnText="Read More"
+              />
+            </Grid>
+          </Grid>
+        </Container>
+        {/* <Box display="flex" justifyContent="center" mt={2}>
+      <Button variant="contained" color="primary">
+        Centered Button
+      </Button>
+    </Box> */}
+        <Box display="flex" justifyContent="center" mt={2}>
+          <Button
+            size="large"
+            sx={{ bgcolor: "#00008B", mx: "auto", px: 20, mt: 5 }}
+            variant="contained"
+            color="primary"
+            endIcon={<ArrowForward />}
+            component={Link}
+            to="#"
+          >
+            {" "}
+            Explore all Solutions{" "}
+          </Button>
+        </Box>
         <Testimonials />
         {/* <Download /> */}
         {/* <MKBox pt={18} pb={6}>

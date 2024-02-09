@@ -110,7 +110,7 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
 ExampleCard.defaultProps = {
   name: "",
   count: 0,
-  pro: false,
+  pro: true,
 };
 
 // Typechecking props for the ExampleCard
