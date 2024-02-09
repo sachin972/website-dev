@@ -49,24 +49,24 @@ import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
-import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
-import Badges from "layouts/sections/elements/badges";
-import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
-import Buttons from "layouts/sections/elements/buttons";
-import Dropdowns from "layouts/sections/elements/dropdowns";
-import ProgressBars from "layouts/sections/elements/progress-bars";
-import Toggles from "layouts/sections/elements/toggles";
-import Typography from "layouts/sections/elements/typography";
+// import PageHeaders from "layouts/sections/page-sections/page-headers";
+// import Features from "layouts/sections/page-sections/featuers";
+// import Navbars from "layouts/sections/navigation/navbars";
+// import NavTabs from "layouts/sections/navigation/nav-tabs";
+// import Pagination from "layouts/sections/navigation/pagination";
+// import Inputs from "layouts/sections/input-areas/inputs";
+// import Forms from "layouts/sections/input-areas/forms";
+// import Alerts from "layouts/sections/attention-catchers/alerts";
+// import Modals from "layouts/sections/attention-catchers/modals";
+// import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
+// import Avatars from "layouts/sections/elements/avatars";
+// import Badges from "layouts/sections/elements/badges";
+// import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
+// import Buttons from "layouts/sections/elements/buttons";
+// import Dropdowns from "layouts/sections/elements/dropdowns";
+// import ProgressBars from "layouts/sections/elements/progress-bars";
+// import Toggles from "layouts/sections/elements/toggles";
+// import Typography from "layouts/sections/elements/typography";
 import { ContactPage } from "@mui/icons-material";
 
 const routes = [
@@ -108,131 +108,131 @@ const routes = [
       },
     ],
   },
-  {
-    name: "Expertise",
-    icon: <Icon>dashboard</Icon>,
-    columns: 1,
-    rowsPerColumn: 2,
-    collapse: [
-      {
-        //Corporate & Investment Banking / Global Markets
-        // Energy & Natural Resources
-        // Insurance
-        // Life Sciences Consulting
-        // Manufacturing Consulting
-        // Healthcare Consulting
-        // Media & Entertainment
-        // Private Equity Consulting
-        // Professional Services
-        // Real Estate Consulting
-        // Retail
-        // Software & Platforms
-        // Telecommunications Consulting
-        // Travel, Hospitality & Leisure
-        // Agribusiness Consulting
-        // Government Consulting
-        // Public Sector Consulting
-        name: "Our Areas",
-        collapse: [
-          {
-            name: "Corporate & Investment Banking / Global Markets",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
-          },
-          {
-            name: "Energy & Natural Resources",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
-          {
-            name: "Insurance",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Life Sciences Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Manufacturing Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Healthcare Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Media & Entertainment",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Private Equity Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Professional Services",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Real Estatae Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Retail",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Software & Plateforms",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Telecommunication Consultancy",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Travel, Hospitality & Leisure",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Agribusiness Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Government Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-          {
-            name: "Public Sector Consulting",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-        ],
-      },
-      // {
-      //   name: "account",
-      //   collapse: [
-      //     {
-      //       name: "sign in",
-      //       route: "/pages/authentication/sign-in",
-      //       component: <SignIn />,
-      //     },
-      //   ],
-      // },
-    ],
-  },
+  // {
+  //   name: "Expertise",
+  //   icon: <Icon>dashboard</Icon>,
+  //   columns: 1,
+  //   rowsPerColumn: 2,
+  //   collapse: [
+  //     {
+  //       //Corporate & Investment Banking / Global Markets
+  //       // Energy & Natural Resources
+  //       // Insurance
+  //       // Life Sciences Consulting
+  //       // Manufacturing Consulting
+  //       // Healthcare Consulting
+  //       // Media & Entertainment
+  //       // Private Equity Consulting
+  //       // Professional Services
+  //       // Real Estate Consulting
+  //       // Retail
+  //       // Software & Platforms
+  //       // Telecommunications Consulting
+  //       // Travel, Hospitality & Leisure
+  //       // Agribusiness Consulting
+  //       // Government Consulting
+  //       // Public Sector Consulting
+  //       name: "Our Areas",
+  //       collapse: [
+  //         {
+  //           name: "Corporate & Investment Banking / Global Markets",
+  //           route: "/pages/landing-pages/about-us",
+  //           component: <AboutUs />,
+  //         },
+  //         {
+  //           name: "Energy & Natural Resources",
+  //           route: "/pages/landing-pages/contact-us",
+  //           component: <ContactUs />,
+  //         },
+  //         {
+  //           name: "Insurance",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Life Sciences Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Manufacturing Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Healthcare Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Media & Entertainment",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Private Equity Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Professional Services",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Real Estatae Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Retail",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Software & Plateforms",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Telecommunication Consultancy",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Travel, Hospitality & Leisure",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Agribusiness Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Government Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //         {
+  //           name: "Public Sector Consulting",
+  //           route: "/pages/landing-pages/author",
+  //           component: <Author />,
+  //         },
+  //       ],
+  //     },
+  //     // {
+  //     //   name: "account",
+  //     //   collapse: [
+  //     //     {
+  //     //       name: "sign in",
+  //     //       route: "/pages/authentication/sign-in",
+  //     //       component: <SignIn />,
+  //     //     },
+  //     //   ],
+  //     // },
+  //   ],
+  // },
   {
     name: "Solutions",
     icon: <Icon>dashboard</Icon>,
@@ -271,155 +271,155 @@ const routes = [
       },
     ],
   },
-  {
-    name: "Careers",
-    icon: <Icon>view_day</Icon>,
-    collapse: [
-      {
-        name: "page sections",
-        description: "See all sections",
-        dropdown: true,
-        collapse: [
-          {
-            name: "page headers",
-            // route: "/sections/page-sections/page-headers",
-            route: "#",
-            component: <PageHeaders />,
-          },
-          {
-            name: "features",
-            // route: "/sections/page-sections/features",
-            route: "#",
-            component: <Features />,
-          },
-        ],
-      },
-      {
-        name: "navigation",
-        description: "See all navigations",
-        dropdown: true,
-        collapse: [
-          {
-            name: "navbars",
-            // route: "/sections/navigation/navbars",
-            route: "#",
-            component: <Navbars />,
-          },
-          {
-            name: "nav tabs",
-            // route: "/sections/navigation/nav-tabs",
-            route: "#",
-            component: <NavTabs />,
-          },
-          {
-            name: "pagination",
-            // route: "/sections/navigation/pagination",
-            route: "#",
-            component: <Pagination />,
-          },
-        ],
-      },
-      {
-        name: "input areas",
-        description: "See all input areas",
-        dropdown: true,
-        collapse: [
-          {
-            name: "inputs",
-            // route: "/sections/input-areas/inputs",
-            route: "#",
-            component: <Inputs />,
-          },
-          {
-            name: "forms",
-            // route: "/sections/input-areas/forms",
-            route: "#",
-            component: <Forms />,
-          },
-        ],
-      },
-      {
-        name: "attention catchers",
-        description: "See all examples",
-        dropdown: true,
-        collapse: [
-          {
-            name: "alerts",
-            // route: "/sections/attention-catchers/alerts",
-            route: "#",
-            component: <Alerts />,
-          },
-          {
-            name: "modals",
-            // route: "/sections/attention-catchers/modals",
-            route: "#",
-            component: <Modals />,
-          },
-          {
-            name: "tooltips & popovers",
-            // route: "/sections/attention-catchers/tooltips-popovers",
-            route: "#",
-            component: <TooltipsPopovers />,
-          },
-        ],
-      },
-      {
-        name: "elements",
-        description: "See all 32 examples",
-        dropdown: true,
-        collapse: [
-          {
-            name: "avatars",
-            // route: "/sections/elements/avatars",
-            route: "#",
-            component: <Avatars />,
-          },
-          {
-            name: "badges",
-            // route: "/sections/elements/badges",
-            route: "#",
-            component: <Badges />,
-          },
-          {
-            name: "breadcrumbs",
-            // route: "/sections/elements/breadcrumbs",
-            route: "#",
-            component: <BreadcrumbsEl />,
-          },
-          {
-            name: "buttons",
-            // route: "/sections/elements/buttons",
-            route: "#",
-            component: <Buttons />,
-          },
-          {
-            name: "dropdowns",
-            // route: "/sections/elements/dropdowns",
-            route: "#",
-            component: <Dropdowns />,
-          },
-          {
-            name: "progress bars",
-            // route: "/sections/elements/progress-bars",
-            route: "#",
-            component: <ProgressBars />,
-          },
-          {
-            name: "toggles",
-            // route: "/sections/elements/toggles",
-            route: "#",
-            component: <Toggles />,
-          },
-          {
-            name: "typography",
-            // route: "/sections/elements/typography",
-            route: "#",
-            component: <Typography />,
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   name: "Careers",
+  //   icon: <Icon>view_day</Icon>,
+  //   collapse: [
+  //     {
+  //       name: "page sections",
+  //       description: "See all sections",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "page headers",
+  //           // route: "/sections/page-sections/page-headers",
+  //           route: "#",
+  //           component: <PageHeaders />,
+  //         },
+  //         {
+  //           name: "features",
+  //           // route: "/sections/page-sections/features",
+  //           route: "#",
+  //           component: <Features />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "navigation",
+  //       description: "See all navigations",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "navbars",
+  //           // route: "/sections/navigation/navbars",
+  //           route: "#",
+  //           component: <Navbars />,
+  //         },
+  //         {
+  //           name: "nav tabs",
+  //           // route: "/sections/navigation/nav-tabs",
+  //           route: "#",
+  //           component: <NavTabs />,
+  //         },
+  //         {
+  //           name: "pagination",
+  //           // route: "/sections/navigation/pagination",
+  //           route: "#",
+  //           component: <Pagination />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "input areas",
+  //       description: "See all input areas",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "inputs",
+  //           // route: "/sections/input-areas/inputs",
+  //           route: "#",
+  //           component: <Inputs />,
+  //         },
+  //         {
+  //           name: "forms",
+  //           // route: "/sections/input-areas/forms",
+  //           route: "#",
+  //           component: <Forms />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "attention catchers",
+  //       description: "See all examples",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "alerts",
+  //           // route: "/sections/attention-catchers/alerts",
+  //           route: "#",
+  //           component: <Alerts />,
+  //         },
+  //         {
+  //           name: "modals",
+  //           // route: "/sections/attention-catchers/modals",
+  //           route: "#",
+  //           component: <Modals />,
+  //         },
+  //         {
+  //           name: "tooltips & popovers",
+  //           // route: "/sections/attention-catchers/tooltips-popovers",
+  //           route: "#",
+  //           component: <TooltipsPopovers />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "elements",
+  //       description: "See all 32 examples",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "avatars",
+  //           // route: "/sections/elements/avatars",
+  //           route: "#",
+  //           component: <Avatars />,
+  //         },
+  //         {
+  //           name: "badges",
+  //           // route: "/sections/elements/badges",
+  //           route: "#",
+  //           component: <Badges />,
+  //         },
+  //         {
+  //           name: "breadcrumbs",
+  //           // route: "/sections/elements/breadcrumbs",
+  //           route: "#",
+  //           component: <BreadcrumbsEl />,
+  //         },
+  //         {
+  //           name: "buttons",
+  //           // route: "/sections/elements/buttons",
+  //           route: "#",
+  //           component: <Buttons />,
+  //         },
+  //         {
+  //           name: "dropdowns",
+  //           // route: "/sections/elements/dropdowns",
+  //           route: "#",
+  //           component: <Dropdowns />,
+  //         },
+  //         {
+  //           name: "progress bars",
+  //           // route: "/sections/elements/progress-bars",
+  //           route: "#",
+  //           component: <ProgressBars />,
+  //         },
+  //         {
+  //           name: "toggles",
+  //           // route: "/sections/elements/toggles",
+  //           route: "#",
+  //           component: <Toggles />,
+  //         },
+  //         {
+  //           name: "typography",
+  //           // route: "/sections/elements/typography",
+  //           route: "#",
+  //           component: <Typography />,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     name: "About",
     icon: <Icon>article</Icon>,

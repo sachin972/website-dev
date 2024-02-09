@@ -47,16 +47,21 @@ function Information() {
                     Kick to your ideas
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Strategic consulting services"
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "Book a Consultation",
+                }}
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="People and talent management services"
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "Collaborate Now",
                 }}
               />
             </RotatingCard>

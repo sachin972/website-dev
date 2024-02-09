@@ -26,16 +26,23 @@ import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
-import ExampleCard from "pages/Presentation/components/ExampleCard";
+// import ExampleCard from "pages/Presentation/components/ExampleCard";
 
 // Data
 import data from "pages/Presentation/sections/data/pagesData";
+import MediaCard from "../components/ExampleCard/card";
 
 function Pages() {
-  const renderData = data.map(({ image, name, route }) => (
+  const renderData = data.map(({ image, name, route, description, btnData }) => (
     <Grid item xs={12} md={6} sx={{ mb: { xs: 3, lg: 0 } }} key={name}>
       <Link to={route}>
-        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
+        <MediaCard
+          image={image}
+          name={name}
+          description={description}
+          btnText={btnData}
+          minHeight="auto"
+        />
       </Link>
     </Grid>
   ));
@@ -78,7 +85,7 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Our projects over your ideas
+                Our work over your needs
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
                 These is just a small selection of the multiple possibitilies you have. Focus on
