@@ -46,7 +46,7 @@ import Icon from "@mui/material/Icon";
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+// import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -73,38 +73,21 @@ const routes = [
   {
     name: "Insights",
     icon: <Icon>dashboard</Icon>,
-    columns: 1,
-    rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
-        collapse: [
-          {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
-          },
-          {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-        ],
+        name: "about us",
+        route: "/pages/landing-pages/about-us",
+        component: <AboutUs />,
       },
       {
-        name: "account",
-        collapse: [
-          {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-        ],
+        name: "contact us",
+        route: "/pages/landing-pages/contact-us",
+        component: <ContactUs />,
+      },
+      {
+        name: "author",
+        route: "/pages/landing-pages/author",
+        component: <Author />,
       },
     ],
   },
@@ -236,38 +219,21 @@ const routes = [
   {
     name: "Solutions",
     icon: <Icon>dashboard</Icon>,
-    columns: 1,
-    rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
-        collapse: [
-          {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
-          },
-          {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-        ],
+        name: "about us",
+        route: "/pages/landing-pages/about-us",
+        component: <AboutUs />,
       },
       {
-        name: "account",
-        collapse: [
-          {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-        ],
+        name: "contact us",
+        route: "/pages/landing-pages/contact-us",
+        component: <ContactUs />,
+      },
+      {
+        name: "author",
+        route: "/pages/landing-pages/author",
+        component: <Author />,
       },
     ],
   },
@@ -423,28 +389,29 @@ const routes = [
   {
     name: "About",
     icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "#",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "#",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "#",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "#",
-      },
-    ],
+    href: "#",
+    // collapse: [
+    //   {
+    //     name: "getting started",
+    //     description: "All about overview, quick start, license and contents",
+    //     href: "#",
+    //   },
+    //   {
+    //     name: "foundation",
+    //     description: "See our colors, icons and typography",
+    //     href: "#",
+    //   },
+    //   {
+    //     name: "components",
+    //     description: "Explore our collection of fully designed components",
+    //     href: "#",
+    //   },
+    //   {
+    //     name: "plugins",
+    //     description: "Check how you can integrate our plugins",
+    //     href: "#",
+    //   },
+    // ],
   },
   {
     name: "Contact US",
