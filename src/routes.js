@@ -75,17 +75,17 @@ const routes = [
     icon: <Icon>dashboard</Icon>,
     collapse: [
       {
-        name: "about us",
+        name: "AI at Workplace",
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />,
       },
       {
-        name: "contact us",
+        name: "People, Planet and Profitability",
         route: "/pages/landing-pages/contact-us",
         component: <ContactUs />,
       },
       {
-        name: "author",
+        name: "Transformational Leadership",
         route: "/pages/landing-pages/author",
         component: <Author />,
       },
@@ -221,17 +221,17 @@ const routes = [
     icon: <Icon>dashboard</Icon>,
     collapse: [
       {
-        name: "about us",
+        name: "Organizational Strategy and Designing",
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />,
       },
       {
-        name: "contact us",
+        name: "Assessment and Succession",
         route: "/pages/landing-pages/contact-us",
         component: <ContactUs />,
       },
       {
-        name: "author",
+        name: "Total Rewards",
         route: "/pages/landing-pages/author",
         component: <Author />,
       },
