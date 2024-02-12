@@ -57,6 +57,10 @@ import MediaCard from "./components/ExampleCard/card";
 import img1 from "../../assets/images/city-profile.jpg";
 import img2 from "../../assets/images/bg-about-us.jpg";
 import img3 from "../../assets/images/bruce-mars.jpg";
+import img4 from "../../assets/images/ivana-square.jpg";
+import img5 from "../../assets/images/bg-coworking.jpeg";
+import img6 from "../../assets/images/ivana-squares.jpg";
+
 import { ArrowForward } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { Button, Box, Typography } from "@mui/material";
