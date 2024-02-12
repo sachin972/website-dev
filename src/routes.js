@@ -415,8 +415,8 @@ const routes = [
   },
   {
     name: "Contact US",
-    icon: <ContactPage />,
-    href: "#contact",
+    component: <ContactUs />,
+    route: "/pages/landing-pages/contact-us",
   },
 ];
 
