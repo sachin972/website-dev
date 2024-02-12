@@ -67,7 +67,7 @@ import Author from "layouts/pages/landing-pages/author";
 // import ProgressBars from "layouts/sections/elements/progress-bars";
 // import Toggles from "layouts/sections/elements/toggles";
 // import Typography from "layouts/sections/elements/typography";
-import { ContactPage } from "@mui/icons-material";
+// import { ContactPage } from "@mui/icons-material";
 
 const routes = [
   {
