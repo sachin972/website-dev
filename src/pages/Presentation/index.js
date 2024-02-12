@@ -232,7 +232,7 @@ function Presentation() {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
               <MediaCard
-                image={img1}
+                image={img4}
                 btnText="Read More"
                 name="Organizational Strategy and Designing"
                 description="Give us your contact and we'll discuss over your ideas."
@@ -240,7 +240,7 @@ function Presentation() {
             </Grid>
             <Grid item xs={12} lg={4}>
               <MediaCard
-                image={img2}
+                image={img5}
                 name="Assessment and Succession"
                 description="Get heated and pull up your ideas and view them in reality."
                 btnText="Read More"
@@ -248,7 +248,7 @@ function Presentation() {
             </Grid>
             <Grid item xs={12} lg={4}>
               <MediaCard
-                image={img3}
+                image={img6}
                 name="Total Rewards"
                 description="We are providing consultancy in several fields wherever required."
                 btnText="Read More"
