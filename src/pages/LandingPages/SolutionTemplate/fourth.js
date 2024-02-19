@@ -29,13 +29,9 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-// import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Team from "pages/LandingPages/AboutUs/sections/Team";
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-import img1 from "../../../assets/images/city-profile.jpg";
-import img2 from "../../../assets/images/bg-about-us.jpg";
-import img3 from "../../../assets/images/bruce-mars.jpg";
-import MediaCard from "../../Presentation/components/ExampleCard/card";
 
 // Routes
 import routes from "routes";
@@ -43,8 +39,25 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+import SolInformation from "./information";
 
-function Insights() {
+const obj = {
+  heading:
+    "Time to foster an inclusive and diverse workplace\nUnlock the power and potential of all that talent",
+  description:
+    "We partner with organizations to nurture inclusive behaviors within organizational teams and refine talent management processes and HR strategies to be fair, equitable, and cohesive, ensuring a workplace that values and promotes diversity at every level. Leveraging our DE&I expertise, research and global benchmarks, we can help you make decisions based on facts and figures to create truly inclusive and diverse workplaces.",
+  offers: [
+    { heading: "We assess and develop inclusive leaders", body: "Something" },
+    { heading: "We help everyone develop inclusive behaviors", body: "Something" },
+    {
+      heading: "We build fair and equitable talent management systems and HR strategies",
+      body: "Something",
+    },
+    { heading: "We create sustaining DE&I Environments", body: "Something" },
+  ],
+};
+
+function Fourth() {
   return (
     <>
       <DefaultNavbar
@@ -92,31 +105,14 @@ function Insights() {
                 },
               })}
             >
-              SPOTLIGHT
+              Diversity, Equity & Inclusion(DEI) Consulting
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Exploring Contemporary Work Challenges: Insights and Perspectives
+              Empowering Unity
             </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -129,38 +125,10 @@ function Insights() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Information /> */}
-        {/* <Team /> */}
+        <SolInformation obj={obj} />
+        <Team />
         {/* <Featuring />
         <Newsletter /> */}
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img1}
-                btnText="Read More"
-                name="AI at workplace"
-                description="Give us your contact and we'll discuss over your ideas."
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img2}
-                name="People, Planet and Profitability"
-                description="Get heated and pull up your ideas and view them in reality."
-                btnText="Read More"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img3}
-                name="Transformational Leadership"
-                description="We are providing consultancy in several fields wherever required."
-                btnText="Read More"
-              />
-            </Grid>
-          </Grid>
-        </Container>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -169,4 +137,4 @@ function Insights() {
   );
 }
 
-export default Insights;
+export default Fourth;

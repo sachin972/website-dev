@@ -29,13 +29,9 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-// import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Team from "pages/LandingPages/AboutUs/sections/Team";
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-import img1 from "../../../assets/images/city-profile.jpg";
-import img2 from "../../../assets/images/bg-about-us.jpg";
-import img3 from "../../../assets/images/bruce-mars.jpg";
-import MediaCard from "../../Presentation/components/ExampleCard/card";
 
 // Routes
 import routes from "routes";
@@ -43,8 +39,30 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+import SolInformation from "./information";
 
-function Insights() {
+const obj = {
+  heading:
+    "Serving beyond customer expectation\nEvery point of contact is an opportunity to strengthen loyalty and achieve your business goals.",
+  description:
+    "Building strong customer relationships is a gradual process, developed through countless interactions between your brand and its customers. Each interaction may evoke various sentiments, ranging from positive and negative to neutral. The aim should be to elevate positive interactions, improve upon the neutral ones, and address any negative experiences.\nEvery moment with your customers is absolutely critical. Our experts are dedicated to upgrade and transform your customer service teams so that you deliver exceptional customer experiences that boost loyalty and retention. We’re committed to helping our clients make the most of these moments that matter.",
+  offers: [
+    {
+      heading: "We define the talent needed to create exceptional customer experiences.",
+      body: "By leveraging our extensive analysis and research, we define qualities, skills, and competencies that are necessary for creating exceptional customer experiences, and the behaviors that create positive interactions to ensure customer loyalty.",
+    },
+    {
+      heading: "We access where you CX talent currently stands.",
+      body: "Conducting a comprehensive assessment of your team's existing skills, knowledge, and capabilities in delivering customer experience, we identify areas of strength and pinpoint gaps or areas for improvement.",
+    },
+    {
+      heading: "We provide personalized training and coaching for the customer service teams.",
+      body: "Based on the assessment, we provide personalized training programs and coaching sessions to address the specific needs of your customer service team. This tailored approach ensures that each team member acquires the necessary skills and knowledge to excel in their role.",
+    },
+  ],
+};
+
+function Sixth() {
   return (
     <>
       <DefaultNavbar
@@ -92,31 +110,14 @@ function Insights() {
                 },
               })}
             >
-              SPOTLIGHT
+              Customer Experience
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Exploring Contemporary Work Challenges: Insights and Perspectives
+              Make each moment special for Customers
             </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -129,38 +130,10 @@ function Insights() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Information /> */}
-        {/* <Team /> */}
+        <SolInformation obj={obj} />
+        <Team />
         {/* <Featuring />
         <Newsletter /> */}
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img1}
-                btnText="Read More"
-                name="AI at workplace"
-                description="Give us your contact and we'll discuss over your ideas."
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img2}
-                name="People, Planet and Profitability"
-                description="Get heated and pull up your ideas and view them in reality."
-                btnText="Read More"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img3}
-                name="Transformational Leadership"
-                description="We are providing consultancy in several fields wherever required."
-                btnText="Read More"
-              />
-            </Grid>
-          </Grid>
-        </Container>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -169,4 +142,4 @@ function Insights() {
   );
 }
 
-export default Insights;
+export default Sixth;

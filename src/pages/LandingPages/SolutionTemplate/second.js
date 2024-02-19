@@ -29,13 +29,9 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-// import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Team from "pages/LandingPages/AboutUs/sections/Team";
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-import img1 from "../../../assets/images/city-profile.jpg";
-import img2 from "../../../assets/images/bg-about-us.jpg";
-import img3 from "../../../assets/images/bruce-mars.jpg";
-import MediaCard from "../../Presentation/components/ExampleCard/card";
 
 // Routes
 import routes from "routes";
@@ -43,8 +39,30 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+import SolInformation from "./information";
 
-function Insights() {
+const obj = {
+  heading: "Sharing the Vision,\nWorking through and with the people",
+  description:
+    "We help in transforming organizations by shaping their structures, strategies, and work processes with a focus on their most valuable asset - their people. We create environments where every team member can thrive and contribute meaningfully to the business. We guide organizations to seamlessly integrate all their aspects, creating a culture where everyone grows together and succeeds as one.",
+  offers: [
+    {
+      heading: "Talent Assessment",
+      body: "We use our knowledge, research, and assessment tools to help organizations understand and use their employees' talents better. We don't just look at what skills people have; we also offer advice and plans to help find and grow the talents needed for their current jobs and for future opportunities.",
+    },
+    {
+      heading: "Succession Planning",
+      body: "Organizations need to prepare for the transitions of key personnel well in advance. This ensures that the company remains strong and maintains continuous performance.",
+    },
+    {
+      heading: "Training & Certification",
+      body: "At our consultancy, we are dedicated to fostering professional growth and leadership excellence. We understand the dynamic nature of the business world and the continuous evolution required to stay ahead.",
+    },
+    { heading: "Robust HR Strategy", body: "Something" },
+  ],
+};
+
+function Second() {
   return (
     <>
       <DefaultNavbar
@@ -92,31 +110,15 @@ function Insights() {
                 },
               })}
             >
-              SPOTLIGHT
+              Assessment and Succession
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Exploring Contemporary Work Challenges: Insights and Perspectives
+              Recognize the current skills within your organization and the skills needed for future
+              success.
             </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -129,38 +131,10 @@ function Insights() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Information /> */}
-        {/* <Team /> */}
+        <SolInformation obj={obj} />
+        <Team />
         {/* <Featuring />
         <Newsletter /> */}
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img1}
-                btnText="Read More"
-                name="AI at workplace"
-                description="Give us your contact and we'll discuss over your ideas."
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img2}
-                name="People, Planet and Profitability"
-                description="Get heated and pull up your ideas and view them in reality."
-                btnText="Read More"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img3}
-                name="Transformational Leadership"
-                description="We are providing consultancy in several fields wherever required."
-                btnText="Read More"
-              />
-            </Grid>
-          </Grid>
-        </Container>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -169,4 +143,4 @@ function Insights() {
   );
 }
 
-export default Insights;
+export default Second;

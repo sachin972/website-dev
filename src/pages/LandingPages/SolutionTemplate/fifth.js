@@ -29,13 +29,9 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-// import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Team from "pages/LandingPages/AboutUs/sections/Team";
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-import img1 from "../../../assets/images/city-profile.jpg";
-import img2 from "../../../assets/images/bg-about-us.jpg";
-import img3 from "../../../assets/images/bruce-mars.jpg";
-import MediaCard from "../../Presentation/components/ExampleCard/card";
 
 // Routes
 import routes from "routes";
@@ -43,8 +39,37 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+import SolInformation from "./information";
 
-function Insights() {
+const obj = {
+  heading: "Cost Efficiency for Competitive Advantage \nBuilding Leaner Organizations for Progress",
+  description:
+    "As the pressure to provide high-value services escalates alongside the imperative to boost productivity, cost optimization continues to occupy a top spot on the priority list for organizations. Shifts in business models, evolving employee preferences, changes in organizational size and structure, and revolutions in service delivery have rendered traditional workforce models outdated\nCollaborating closely with your team, we'll identify the areas to adjust in order to reallocate your resources efficiently, ensuring sustainable cost optimization.",
+  offers: [
+    {
+      heading: "Optimize Your Operating Model for Efficiency",
+      body: "We help redesign your operating model to eliminate waste and redundancies, ensuring that every process is streamlined and contributes directly to your bottom line.",
+    },
+    {
+      heading: "Streamline Organizational Structure to Reduce Costs",
+      body: "By creating a more efficient organizational structure, we help you cut unnecessary layers, fostering direct communication and reducing management overhead.",
+    },
+    {
+      heading: "Rationalize Headcount to Optimize Spend",
+      body: "We assist in aligning your workforce size with actual business needs, focusing on maintaining productivity with optimized costs, which includes identifying areas for automation and roles that deliver the highest value.",
+    },
+    {
+      heading: "Revise Reward Systems to Drive Cost-Effective Performance",
+      body: "We guide you in creating reward systems that motivate desired behaviors and performance efficiently, ensuring that compensation is aligned with market standards and business affordability.",
+    },
+    {
+      heading: "Drive Change Management to Minimize Transition Costs",
+      body: "We assist in effective change management that reduces the friction and costs associated with transformation, ensuring a smoother transition with less impact on productivity.",
+    },
+  ],
+};
+
+function Fifth() {
   return (
     <>
       <DefaultNavbar
@@ -92,31 +117,14 @@ function Insights() {
                 },
               })}
             >
-              SPOTLIGHT
+              Cost Optimization
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Exploring Contemporary Work Challenges: Insights and Perspectives
+              Progressing Efficiently
             </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
             </MKButton> */}
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -129,38 +137,10 @@ function Insights() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Information /> */}
-        {/* <Team /> */}
+        <SolInformation obj={obj} />
+        <Team />
         {/* <Featuring />
         <Newsletter /> */}
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img1}
-                btnText="Read More"
-                name="AI at workplace"
-                description="Give us your contact and we'll discuss over your ideas."
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img2}
-                name="People, Planet and Profitability"
-                description="Get heated and pull up your ideas and view them in reality."
-                btnText="Read More"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <MediaCard
-                image={img3}
-                name="Transformational Leadership"
-                description="We are providing consultancy in several fields wherever required."
-                btnText="Read More"
-              />
-            </Grid>
-          </Grid>
-        </Container>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -169,4 +149,4 @@ function Insights() {
   );
 }
 
-export default Insights;
+export default Fifth;

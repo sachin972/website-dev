@@ -46,6 +46,12 @@ import Icon from "@mui/material/Icon";
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
+import First from "pages/LandingPages/SolutionTemplate/first";
+import Second from "pages/LandingPages/SolutionTemplate/second";
+import Third from "pages/LandingPages/SolutionTemplate/third";
+import Fourth from "pages/LandingPages/SolutionTemplate/fourth";
+import Fifth from "pages/LandingPages/SolutionTemplate/fifth";
+import Sixth from "pages/LandingPages/SolutionTemplate/sixth";
 // import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
@@ -222,18 +228,39 @@ const routes = [
     collapse: [
       {
         name: "Organizational Strategy and Designing",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        route: "/pages/landing-pages/solutions/1",
+        component: <First />,
       },
       {
         name: "Assessment and Succession",
-        route: "/pages/landing-pages/contact-us",
-        component: <ContactUs />,
+        route: "/pages/landing-pages/solutions/2",
+        component: <Second />,
       },
       {
         name: "Total Rewards",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
+        route: "/pages/landing-pages/solutions/3",
+        component: <Third />,
+      },
+      {
+        name: "Featured Solutions",
+        dropdown: true,
+        collapse: [
+          {
+            name: "Diversity, Equity & Inclusion(DEI) Consulting",
+            route: "/pages/landing-pages/solutions/4",
+            component: <Fourth />,
+          },
+          {
+            name: "Cost Optimization",
+            route: "/pages/landing-pages/solutions/5",
+            component: <Fifth />,
+          },
+          {
+            name: "Customer Experience",
+            route: "/pages/landing-pages/solutions/6",
+            component: <Sixth />,
+          },
+        ],
       },
     ],
   },
