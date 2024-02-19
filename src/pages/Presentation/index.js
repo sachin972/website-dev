@@ -51,7 +51,7 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-presentation.jpg";
 // import InputIcon from "layouts/sections/input-areas/inputs/components/InputIcon";
 // import Forms from "layouts/sections/input-areas/forms";
-import FormSimple from "layouts/sections/input-areas/forms/components/FormSimple";
+// import FormSimple from "layouts/sections/input-areas/forms/components/FormSimple";
 
 import MediaCard from "./components/ExampleCard/card";
 import img1 from "../../assets/images/city-profile.jpg";
@@ -66,6 +66,7 @@ import { Link } from "react-router-dom";
 import { Button, Box, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import DividerWithText from "./divider";
+// import Solution from "pages/LandingPages/Solutions";
 // import { Chip } from "@mui/material";
 
 function Presentation() {
@@ -193,7 +194,7 @@ function Presentation() {
             color="primary"
             endIcon={<ArrowForward />}
             component={Link}
-            to="#"
+            to="/pages/landing-pages/insights"
           >
             {" "}
             Explore all Insights{" "}
@@ -269,7 +270,7 @@ function Presentation() {
             color="primary"
             endIcon={<ArrowForward />}
             component={Link}
-            to="#"
+            to="/pages/landing-pages/solutions"
           >
             {" "}
             Explore all Solutions{" "}
@@ -329,7 +330,7 @@ function Presentation() {
             </Grid>
           </Container>
         </MKBox> */}
-        <FormSimple id="contact" />
+        {/* <FormSimple id="contact" /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
