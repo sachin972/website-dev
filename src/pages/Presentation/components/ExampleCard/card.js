@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import MKButton from "components/MKButton";
 import { Link } from "react-router-dom";
 
-export default function MediaCard({ image, name, description, btnText }) {
+export default function MediaCard({ image, name, description, btnText, route }) {
   console.log(description);
   return (
     <Card sx={{ maxWidth: "auto" }}>
@@ -24,7 +24,7 @@ export default function MediaCard({ image, name, description, btnText }) {
       </CardContent>
       <CardActions>
         {/* <Button variant="outlined">{btnText}</Button> */}
-        <MKButton component={Link} to="#" color="white" size="small" fullWidth>
+        <MKButton component={Link} to={route} color="white" size="small" fullWidth>
           {btnText}
         </MKButton>
         {/* <Button size="small">Learn More</Button> */}
@@ -38,6 +38,7 @@ MediaCard.defaultProps = {
   name: "",
   description: "",
   btnText: "",
+  route: "",
 };
 
 // Typechecking props for the ExampleCard
@@ -46,4 +47,5 @@ MediaCard.propTypes = {
   name: PropTypes.string,
   description: PropTypes.string,
   btnText: PropTypes.string,
+  route: PropTypes.string,
 };

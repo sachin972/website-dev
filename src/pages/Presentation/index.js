@@ -237,6 +237,7 @@ function Presentation() {
                 btnText="Read More"
                 name="Organizational Strategy and Designing"
                 description="Give us your contact and we'll discuss over your ideas."
+                route="/pages/landing-pages/solutions/1"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -245,6 +246,7 @@ function Presentation() {
                 name="Assessment and Succession"
                 description="Get heated and pull up your ideas and view them in reality."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/2"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -253,6 +255,7 @@ function Presentation() {
                 name="Total Rewards"
                 description="We are providing consultancy in several fields wherever required."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/3"
               />
             </Grid>
           </Grid>
