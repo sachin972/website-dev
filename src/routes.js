@@ -43,15 +43,19 @@ import Icon from "@mui/material/Icon";
 // import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
+// import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
+// import Author from "layouts/pages/landing-pages/author";
 import First from "pages/LandingPages/SolutionTemplate/first";
 import Second from "pages/LandingPages/SolutionTemplate/second";
 import Third from "pages/LandingPages/SolutionTemplate/third";
 import Fourth from "pages/LandingPages/SolutionTemplate/fourth";
 import Fifth from "pages/LandingPages/SolutionTemplate/fifth";
 import Sixth from "pages/LandingPages/SolutionTemplate/sixth";
+import FirstInsight from "pages/LandingPages/SolutionTemplate/insights1";
+import SecondInsight from "pages/LandingPages/SolutionTemplate/insights2";
+import ThirdInsight from "pages/LandingPages/SolutionTemplate/insights3";
+import AboutUs from "pages/LandingPages/AboutUs";
 // import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
@@ -82,18 +86,18 @@ const routes = [
     collapse: [
       {
         name: "AI at Workplace",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        route: "/pages/landing-pages/insights/0",
+        component: <FirstInsight />,
       },
       {
         name: "People, Planet and Profitability",
-        route: "/pages/landing-pages/contact-us",
-        component: <ContactUs />,
+        route: "/pages/landing-pages/insights/1",
+        component: <SecondInsight />,
       },
       {
         name: "Transformational Leadership",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
+        route: "/pages/landing-pages/insights/2",
+        component: <ThirdInsight />,
       },
     ],
   },
@@ -416,7 +420,8 @@ const routes = [
   {
     name: "About",
     icon: <Icon>article</Icon>,
-    href: "#",
+    route: "/pages/landing-pages/about-us",
+    component: <AboutUs />,
     // collapse: [
     //   {
     //     name: "getting started",

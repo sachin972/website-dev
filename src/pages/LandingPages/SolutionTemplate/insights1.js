@@ -42,27 +42,25 @@ import bgImage from "assets/images/bg-about-us.jpg";
 import SolInformation from "./information";
 
 const obj = {
-  heading: "Sharing the Vision,\nWorking through and with the people",
-  description:
-    "We help in transforming organizations by shaping their structures, strategies, and work processes with a focus on their most valuable asset - their people. We create environments where every team member can thrive and contribute meaningfully to the business. We guide organizations to seamlessly integrate all their aspects, creating a culture where everyone grows together and succeeds as one.",
+  heading: "Details",
+  description: "Detailed Description.",
   offers: [
     {
-      heading: "High Performing Executive Teams",
-      body: "In today's volatile and uncertain environment, characterized by constant change, a robust executive team is vital for navigating challenges and capitalizing on opportunities. Our consultancy focuses on enhancing executive team performance by strengthening visionary leadership, fostering shared purpose, developing talent, establishing performance benchmarks, and optimizing organizational processes and systems.",
+      heading: "Profits",
+      body: "Profit details.",
     },
     {
-      heading: "Organizational Structure",
-      body: "We recognize the critical importance of aligning organizational structure with strategic objectives. Our consultants excel in crafting organizations that facilitate seamless operations, transparent assignment of duties and responsibilities and increased productivity.",
+      heading: "Another thing",
+      body: "Another detail.",
     },
     {
-      heading: "Job and Work Design",
-      body: "In today's dynamic business environment, a robust job and career architecture is essential for organizational success. Our consultancy specializes in creating tailored work and career frameworks, precise job definitions, fair compensation structures, and opportunities for professional development, ultimately optimizing organizational performance and maximizing employee potential.",
+      heading: "New thing",
+      body: "New Details.",
     },
-    { heading: "Robust HR Strategy", body: "Something" },
+    { heading: "Last", body: "Last Details" },
   ],
 };
-
-function First() {
+function FirstInsight() {
   return (
     <>
       <DefaultNavbar
@@ -110,7 +108,7 @@ function First() {
                 },
               })}
             >
-              Organizational Strategy and Designing
+              AI at Workplace
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               Tailored solutions aimed at synchronization of the strategy, structure, people and
@@ -140,4 +138,4 @@ function First() {
   );
 }
 
-export default First;
+export default FirstInsight;

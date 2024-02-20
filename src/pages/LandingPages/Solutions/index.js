@@ -147,6 +147,7 @@ function Solution() {
                 and processes are
                 harmoniously integrated to
                 achieve peak performance."
+                route="/pages/landing-pages/solutions/1"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -161,6 +162,7 @@ function Solution() {
                 but is also future-proofed for
                 the innovations ahead."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/2"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -176,6 +178,7 @@ function Solution() {
                 attracting, motivating, and
                 retaining top talent."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/3"
               />
             </Grid>
           </Grid>
@@ -221,6 +224,7 @@ function Solution() {
                 respectful, innovative, and
                 productive workplace where
                 everyone can thrive."
+                route="/pages/landing-pages/solutions/4"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -233,6 +237,7 @@ function Solution() {
                 for sustainable cost
                 optimization."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/5"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -246,6 +251,7 @@ function Solution() {
                 meet but surpass customer
                 expectations.."
                 btnText="Read More"
+                route="/pages/landing-pages/solutions/6"
               />
             </Grid>
           </Grid>

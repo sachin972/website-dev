@@ -141,6 +141,7 @@ function Insights() {
                 btnText="Read More"
                 name="AI at workplace"
                 description="Give us your contact and we'll discuss over your ideas."
+                route="/pages/landing-pages/insights/0"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -149,6 +150,7 @@ function Insights() {
                 name="People, Planet and Profitability"
                 description="Get heated and pull up your ideas and view them in reality."
                 btnText="Read More"
+                route="/pages/landing-pages/insights/1"
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -157,6 +159,7 @@ function Insights() {
                 name="Transformational Leadership"
                 description="We are providing consultancy in several fields wherever required."
                 btnText="Read More"
+                route="/pages/landing-pages/insights/2"
               />
             </Grid>
           </Grid>
